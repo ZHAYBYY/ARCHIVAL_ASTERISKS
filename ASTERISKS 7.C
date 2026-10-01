@@ -1,55 +1,56 @@
 #include <stdio.h>
 
 int main() {
-    int n = 3; // height of the upper half (number of rows)
-    int i = 1;
+    int jhay = 3; // height of the upper half (number of rows)
+    int jas = 1;
 
     // Upper half of the diamond
-    while (i <= n) {
-        int spaces = n - i;
-        int stars = 2 * i - 1;
+    while (jas <= jhay) {
+        int spaces = jhay - jas;
+        int stars = 2 * jas - 1;
 
         // Print spaces
-        int j = 0;
-        while (j < spaces) {
+        int lip = 0;
+        while (lip < spaces) {
             printf(" ");
-            j++;
+            lip++;
         }
 
         // Print stars
-        j = 0;
-        while (j < stars) {
+        lip = 0;
+        while (lip < stars) {
             printf("*");
-            j++;
+            lip++;
         }
 
         printf("\n");
-        i++;
+        jas++;
     }
 
     // Lower half of the diamond
-    i = n - 1;
-    while (i >= 1) {
-        int spaces = n - i;
-        int stars = 2 * i - 1;
+    jas = jhay - 1;
+    while (jas >= 1) {
+        int spaces = jhay - jas;
+        int stars = 2 * jas - 1;
 
         // Print spaces
-        int j = 0;
-        while (j < spaces) {
+        int lip = 0;
+        while (lip < spaces) {
             printf(" ");
-            j++;
+            lip++;
         }
 
         // Print stars
-        j = 0;
-        while (j < stars) {
+        lip = 0;
+        while (lip < stars) {
             printf("*");
-            j++;
+            lip++;
         }
 
         printf("\n");
-        i--;
+        jas--;
     }
 
     return 0;
 }
+
